@@ -136,54 +136,55 @@ public class Capstone {
 		c_choice = in.nextInt();
 
 	switch(c_choice){
-case 1: //sign in
-signIn(nUser, nPass, in );
-break;
-case 2: //Login
-isLog = logIn(nUser, nPass, in);
-if(isLog){
-break;
-}
-}
-if (isLog == true) {
-isLog = false;
+		case 1: //sign in
+			signIn(nUser, nPass, in );
+		break;
+		case 2: //Login
+			isLog = logIn(nUser, nPass, in);
+			if(isLog){
+			break;
+		}
+	}
+		if (isLog == true) {
+		isLog = false;
 // MAIN MENU
 do{
-System.out.println("\n\t\t\t\t\t================ WELCOME TO ROSARIO TRANSPO! ==================");
-System.out.println("\t\t\t\t\t\t===== where traveling is secured, safe, and fun <3 =====");
-System.out.println("\n\t\t\t\t\t================= RIDE WITH US ===================\n");
-System.out.println(" \n\t\t\t\t\t[1] Book a ride");
-System.out.println(" \n\t\t\t\t\t[2] View Booking");
-System.out.println(" \n\t\t\t\t\t[3] Log out");
-System.out.print("\n\t\t\t\t\t Enter Choice: ");
-m_choice = in.nextInt();
+	System.out.println("\n\t\t\t\t\t================ WELCOME TO ROSARIO TRANSPO! ==================");
+	System.out.println("\t\t\t\t\t\t===== where traveling is secured, safe, and fun <3 =====");
+	System.out.println("\n\t\t\t\t\t================= RIDE WITH US ===================\n");
+	System.out.println(" \n\t\t\t\t\t[1] Book a ride");
+	System.out.println(" \n\t\t\t\t\t[2] View Booking");
+	System.out.println(" \n\t\t\t\t\t[3] Log out");
+	System.out.print("\n\t\t\t\t\t Enter Choice: ");
+	m_choice = in.nextInt();
+	
 switch (m_choice) {
-case 1: {
-do{
-System.out.println("\n\n\t\t\t\t\t================= BOOKING MENU =====================\n");
-System.out.println(" \n\t\t\t\t\t[1] Create Booking");
-System.out.println(" \n\t\t\t\t\t[2] Edit Booking");
-System.out.println(" \n\t\t\t\t\t[3] Cancel Booking");
-System.out.println(" \n\t\t\t\t\t[4] Back to First Menu");
-System.out.print("\n\t\t\t\t\t Enter choice: ");
-choice = in.nextInt();
-in.nextLine();
-switch (choice) {
-case 1: {// Create Booking
-System.out.println("\n\t\t\t\t\t==================== CREATE BOOKING =========================\n");
-table ();
-System.out.print("\n\t\t\t\t\t Booking Name: ");
-b_name = in.nextLine();
-do{
-System.out.print("\n\t\t\t\t\t Bus: ");
-bus = in.nextInt();
-if (bus < 1 || bus > 5) {
-System.out.println("\n\t\t\t\t\t Invalid bus number. Please refer to the Table given above");
-}
-} while (bus < 1 || bus > 5);
-do{
-System.out.print("\n\t\t\t\t\t Input Payment: PHP ");
-total = in.nextDouble();
+	case 1: {
+		do{
+			System.out.println("\n\n\t\t\t\t\t================= BOOKING MENU =====================\n");
+			System.out.println(" \n\t\t\t\t\t[1] Create Booking");
+			System.out.println(" \n\t\t\t\t\t[2] Edit Booking");
+			System.out.println(" \n\t\t\t\t\t[3] Cancel Booking");
+			System.out.println(" \n\t\t\t\t\t[4] Back to First Menu");
+			System.out.print("\n\t\t\t\t\t Enter choice: ");
+			choice = in.nextInt();
+			in.nextLine();
+		switch (choice) {
+			case 1: {// Create Booking
+				System.out.println("\n\t\t\t\t\t==================== CREATE BOOKING =========================\n");
+				table ();
+				System.out.print("\n\t\t\t\t\t Booking Name: ");
+				b_name = in.nextLine();
+			do{
+				System.out.print("\n\t\t\t\t\t Bus: ");
+				bus = in.nextInt();
+			if (bus < 1 || bus > 5) {
+				System.out.println("\n\t\t\t\t\t Invalid bus number. Please refer to the Table given above");
+			}
+				} while (bus < 1 || bus > 5);
+			do{
+				System.out.print("\n\t\t\t\t\t Input Payment: PHP ");
+				total = in.nextDouble();
 if ((bus == 1 && total < b1) ||
 (bus == 2 && total < b2) ||
 (bus == 3 && total < b3) ||
