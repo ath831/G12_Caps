@@ -185,44 +185,44 @@ switch (m_choice) {
 			do{
 				System.out.print("\n\t\t\t\t\t Input Payment: PHP ");
 				total = in.nextDouble();
-if ((bus == 1 && total < b1) ||
-(bus == 2 && total < b2) ||
-(bus == 3 && total < b3) ||
-(bus == 4 && total < b4) ||
-(bus == 5 && total < b5)) {
-System.out.println("\n\t\t\t\t\t\t Payment failed due to Insufficient Money. Please enter a valid amount.");
-}
-} while ((bus == 1 && total < b1) ||
-(bus == 2 && total < b2) ||
-(bus == 3 && total < b3) ||
-(bus == 4 && total < b4) ||
-(bus == 5 && total < b5));
-if (bus == 1) {
-route = "Rosario - Cavite City";
-sched = "7:00 am - 8:30 am";
-days = "Monday - Sunday";
-fare = b1;
-}else if (bus == 2) {
-route = "Rosario - GenTri";
-sched = "9:00 am - 11:30 am";
-days = "Monday - Sunday";
-fare = b2;
-}else if (bus == 3) {
-route = "Rosario - Tanza";
-sched = "12:00 nn - 1:30 pm";
-days = "Monday - Sunday";
-fare = b3;
-}else if (bus == 4) {
-route = "Rosario - Naic";
-sched = "2:00 pm - 3:30 pm";
-days = "Monday - Sunday";
-fare = b4;
-}else if (bus == 5) {
-route = "Rosario - Kawit";
-sched = "5:00 pm - 6:30 pm";
-days = "Monday - Sunday";
-fare = b5;
-}
+	if ((bus == 1 && total < b1) ||
+		(bus == 2 && total < b2) ||
+		(bus == 3 && total < b3) ||
+		(bus == 4 && total < b4) ||
+		(bus == 5 && total < b5)) {
+		System.out.println("\n\t\t\t\t\t\t Payment failed due to Insufficient Money. Please enter a valid amount.");
+		}				
+	} while ((bus == 1 && total < b1) ||
+			(bus == 2 && total < b2) ||
+			(bus == 3 && total < b3) ||
+			(bus == 4 && total < b4) ||
+			(bus == 5 && total < b5));
+	if (bus == 1) {
+		route = "Rosario - Cavite City";
+		sched = "7:00 am - 8:30 am";
+		days = "Monday - Sunday";
+		fare = b1;
+	}else if (bus == 2) {
+		route = "Rosario - GenTri";
+		sched = "9:00 am - 11:30 am";
+		days = "Monday - Sunday";
+		fare = b2;
+	}else if (bus == 3) {
+		route = "Rosario - Tanza";
+		sched = "12:00 nn - 1:30 pm";
+		days = "Monday - Sunday";
+		fare = b3;
+	}else if (bus == 4) {
+		route = "Rosario - Naic";
+		sched = "2:00 pm - 3:30 pm";
+		days = "Monday - Sunday";
+		fare = b4;
+	}else if (bus == 5) {
+		route = "Rosario - Kawit";
+		sched = "5:00 pm - 6:30 pm";
+		days = "Monday - Sunday";
+		fare = b5;
+	}
 //Computation ng sukli
 change = total - fare;
 System.out.println("\n\t\t\t\t\t Your Payment was Successful!\n");
